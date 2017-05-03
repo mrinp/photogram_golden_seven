@@ -1,0 +1,17 @@
+<h1> Here's your photo: </h1>
+<div> <p> <%= @my_photo.caption %> </p> </div>
+<div> <img src = "<%= @my_photo.source %>" </div>
+
+<p> <%= time_ago_in_words(@my_photo.created_at) %> </p>
+
+<p>
+  <a href="/photos" class="btn btn-default"> Go back</a>
+  <a href="/photos/<%=@unique_id%>/edit" class="btn btn-default">Edit</a>
+  <a href="/delete_photo/<%=@unique_id%>" class="btn btn-default">Delete</a>
+</p>
+
+
+
+<!-- <form action = "/photos"> <button> Go Back </button> </form>
+<form action = "/update_photos/:le_id"> <button> Edit </button> </form>
+<form action = "/delete_photos/:da_id"> <button> Delete </button> </form> -->

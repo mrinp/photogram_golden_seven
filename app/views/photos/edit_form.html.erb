@@ -1,0 +1,14 @@
+<h1> Edit The Form Here! </h1>
+
+<form action = "/update_photo/<%=@my_photo%>">
+
+  <div>
+    <label for="fricks"> The URL </label>
+    <input id="fricks" type="text" name="user_url" value="<%= @my_photo.source %>">
+  </div>
+  <div>
+    <label for="sake"> The URL </label>
+    <input id="sake" type="text" name="user_caption" value="<%= @my_photo.caption %>">
+  </div>
+    <button> Update Photo </button>
+  </form>
