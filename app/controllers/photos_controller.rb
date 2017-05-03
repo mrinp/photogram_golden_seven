@@ -42,7 +42,7 @@ class PhotosController < ApplicationController
     my_photo.caption = params[:user_caption]
     my_photo.save
     # render ("photos/update_row.html.erb")
-    redirect_to("/photos/#{my_photo.id}")
+    redirect_to("/photos/#{my_photo.id}/edit")
   end
 
   def destroy_row

@@ -1,14 +1,13 @@
-<h1> Edit The Form Here! </h1>
+<h1> Edit Photo </h1>
 
-<form action = "/update_photo/<%=@my_photo%>">
-
+<form action = "/update_photo/<%= @my_photo.id%>">
   <div>
-    <label for="fricks"> Image URL </label>
-    <input id="fricks" type="text" name="user_url" value="<%= @my_photo.source %>">
+    <label for="donkey"> Image URL </label>
+    <input id="donkey" type="text" name="user_url" value="<%= @my_photo.source %>">
   </div>
   <div>
-    <label for="sake"> Caption </label>
-    <input id="sake" type="text" name="user_caption" value="<%= @my_photo.caption %>">
+    <label for="zebra"> Caption </label>
+    <input id="zebra" type="text" name="user_caption" value="<%= @my_photo.caption %>">
   </div>
     <button> Update Photo </button>
   </form>
